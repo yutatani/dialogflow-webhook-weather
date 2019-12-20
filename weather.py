@@ -4,7 +4,7 @@ import pyowm
 import os
 
 app = Flask(__name__)
-owmapikey=os.environ.get('b08f2b3614c7e7246c0c335c93d39bdb') #or provide your key here
+owmapikey=os.environ.get('yutab08f2b3614c7e7246c0c335c93d39bdb') #or provide your key here
 owm = pyowm.OWM(owmapikey)
 
 #geting and sending response to dialogflow
@@ -56,9 +56,6 @@ def processRequest(req):
         }
     
 if __name__ == '__main__':
-    print("aaaaaaa")
-    """
     port = int(os.getenv('PORT', 5000))
     print("Starting app on port %d" % port)
     app.run(debug=False, port=port, host='0.0.0.0')
-    """
